@@ -2,6 +2,7 @@
 ### Difficulty: Easy
 <br>
 
+
 **Table: Person**
 
 | Column Name | Type    |
@@ -13,6 +14,10 @@
 
 personId is the primary key (column with unique values) for this table.
 This table contains information about the ID of some persons and their first and last names.
+
+
+
+
 
 
 **Table: Address**
@@ -27,6 +32,9 @@ This table contains information about the ID of some persons and their first and
 
 addressId is the primary key (column with unique values) for this table.
 Each row of this table contains information about the city and state of one person with ID = PersonId.
+
+
+
 
 Write a solution to report the first name, last name, city, and state of each person in the Person table. If the address of a personId is not present in the Address table, report null instead.
 
@@ -49,6 +57,8 @@ The result format is in the following example.
 | 2        | Alice    | Bob       |
 <br>
 
+
+
 **Address table:**
 
 
@@ -60,6 +70,7 @@ The result format is in the following example.
 
 **Output:** 
 
+
 | firstName | lastName | city          | state    |
 |-----------|----------|---------------|----------|
 | Allen     | Wang     | Null          | Null     |
@@ -67,6 +78,8 @@ The result format is in the following example.
 <br>
 
 **Explanation:**
+
  
 There is no address in the address table for the personId = 1 so we return null in their city and state.
 addressId = 1 contains information about the address of personId = 2.
+
